@@ -1,0 +1,420 @@
+/*====================================
+    MENU.CSS
+====================================*/
+
+table img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:2px solid #eee;
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#f5fff8;
+
+}
+
+.badge{
+
+    min-width:60px;
+
+    display:inline-block;
+
+    text-align:center;
+
+}
+
+.badge-success{
+
+    background:#198754;
+
+}
+
+.badge-warning{
+
+    background:#ffc107;
+
+    color:#333;
+
+}
+
+.badge-danger{
+
+    background:#dc3545;
+
+}
+
+.search-box{
+
+    margin-bottom:20px;
+
+}
+
+.search-box input{
+
+    max-width:350px;
+
+}
+
+.empty{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:17px;
+
+}
+
+/*====================================
+    STOK CONTROL & BUTTONS
+====================================*/
+.stok-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-stok {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+}
+
+.btn-stok-minus {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-stok-minus:hover:not(:disabled) {
+    background: #bb2d3b;
+    transform: scale(1.12);
+}
+
+.btn-stok-plus {
+    background: #198754;
+    color: #fff;
+}
+
+.btn-stok-plus:hover {
+    background: #157347;
+    transform: scale(1.12);
+}
+
+.btn-stok:disabled {
+    background: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.65;
+}
+
+.stok-badge {
+    min-width: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Alert styles */
+.alert {
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+}
+
+/*====================================
+    TABLE & HEADER POLISH
+====================================*/
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 5px;
+}
+
+table th {
+    background: #198754;
+    color: #ffffff;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+/* Header Actions */
+.card-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-header-actions .search-box {
+    margin-bottom: 0;
+    flex: 1;
+    max-width: 350px;
+}
+
+.card-header-actions .search-box input {
+    height: 44px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.card-header-actions .btn-success {
+    height: 44px;
+    padding: 0 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 3px 8px rgba(25, 135, 84, 0.25);
+    white-space: nowrap;
+}
+
+/* Stok Container & Buttons */
+.stok-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-stok {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-stok-minus {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-stok-minus:hover:not(:disabled) {
+    background: #bb2d3b;
+    transform: scale(1.12);
+}
+
+.btn-stok-plus {
+    background: #198754;
+    color: #fff;
+}
+
+.btn-stok-plus:hover {
+    background: #157347;
+    transform: scale(1.12);
+}
+
+.btn-stok:disabled {
+    background: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.65;
+}
+
+.stok-badge {
+    min-width: 44px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Action Delete Button */
+.btn-action-delete {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    border: none;
+    background: #fff0f1;
+    color: #dc3545;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-action-delete:hover {
+    background: #dc3545;
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 3px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.25s ease;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 90%;
+    max-width: 480px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: slideDown 0.25s ease;
+}
+
+.modal-header {
+    padding: 16px 22px;
+    background: #198754;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.close-modal {
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s;
+}
+
+.close-modal:hover {
+    color: #fff;
+}
+
+.modal-body {
+    padding: 20px 22px;
+}
+
+.modal-body .form-group {
+    margin-bottom: 16px;
+}
+
+.modal-footer {
+    padding: 14px 22px;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid #eee;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
